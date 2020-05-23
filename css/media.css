@@ -1,0 +1,66 @@
+/* Large Screen */
+
+@media (min-width:1200px) {}
+
+
+/* Medium Screen */
+
+@media (min-width:992px) and (max-width: 1199px) {
+    /* NavBar */
+    .navbar-nav>li>a {
+        padding-left: 20px;
+    }
+    /* About */
+}
+
+
+/* Small Screen */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* NavBar */
+    .navbar-nav>li>a {
+        padding-left: 20px;
+    }
+    /* About */
+    .about .text {
+        text-align: center !important;
+    }
+    .about .text h4 {
+        margin:15px 0;
+    }
+}
+
+
+/* Smart Phones And Tablets */
+
+@media (max-width: 767px) {
+    /* Navbar */
+    .navbar-nav>li>a {
+        padding-left: 10px;
+        padding-bottom: 0;
+    }
+    
+    .navbar-collapse {
+        background-color:rgba(0,0,0,0.9) !important;
+    }
+    
+    /* Services */
+    .services .service {
+        padding-top: 40px;
+    }
+    .about .text {
+        text-align: center !important;
+    }
+    .about .text h4 {
+        margin:15px 0;
+    }
+    
+    .partners .partner {
+        margin-bottom: 20px;
+    }
+    
+    .footer .copyright {
+        text-align: center;
+        margin-bottom: 20px;
+}
+}

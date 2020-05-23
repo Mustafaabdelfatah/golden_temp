@@ -1,0 +1,643 @@
+/* Start Main Rules */
+
+
+/* Logo Web Font */
+
+@font-face {
+    src: url('../fonts/Wisdom-Script-AJ.otf');
+    font-family: logo;
+}
+
+body {
+    overflow: hidden;
+}
+
+.loading {
+    background: #222;
+    color: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.cssload-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    perspective: 2000px;
+}
+
+.cssload-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.cssload-inner.cssload-one {
+    left: 0%;
+    top: 0%;
+    animation: cssload-rotate-one 1s linear infinite;
+    -o-animation: cssload-rotate-one 1s linear infinite;
+    -ms-animation: cssload-rotate-one 1s linear infinite;
+    -webkit-animation: cssload-rotate-one 1s linear infinite;
+    -moz-animation: cssload-rotate-one 1s linear infinite;
+    border-bottom: 8px solid rgb(254, 211, 54);
+}
+
+.cssload-inner.cssload-two {
+    right: 0%;
+    top: 0%;
+    animation: cssload-rotate-two 1s linear infinite;
+    -o-animation: cssload-rotate-two 1s linear infinite;
+    -ms-animation: cssload-rotate-two 1s linear infinite;
+    -webkit-animation: cssload-rotate-two 1s linear infinite;
+    -moz-animation: cssload-rotate-two 1s linear infinite;
+    border-right: 8px solid rgb(254, 211, 54);
+}
+
+.cssload-inner.cssload-three {
+    right: 0%;
+    bottom: 0%;
+    animation: cssload-rotate-three 1s linear infinite;
+    -o-animation: cssload-rotate-three 1s linear infinite;
+    -ms-animation: cssload-rotate-three 1s linear infinite;
+    -webkit-animation: cssload-rotate-three 1s linear infinite;
+    -moz-animation: cssload-rotate-three 1s linear infinite;
+    border-top: 8px solid rgb(254, 211, 54);
+}
+
+@keyframes cssload-rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate-one {
+    0% {
+        -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate-one {
+    0% {
+        -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate-one {
+    0% {
+        -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate-one {
+    0% {
+        -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes cssload-rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate-two {
+    0% {
+        -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate-two {
+    0% {
+        -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate-two {
+    0% {
+        -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate-two {
+    0% {
+        -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes cssload-rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate-three {
+    0% {
+        -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate-three {
+    0% {
+        -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate-three {
+    0% {
+        -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate-three {
+    0% {
+        -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+
+/* End Main Rules */
+
+
+/* Start Navbar */
+
+.navbar-brand {
+    font-family: logo;
+    font-size: 40px !important;
+    color: #fed136 !important;
+}
+
+.navbar {
+    min-height: 67px;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    transition:background 0.5s ease-in-out;
+}
+
+.navbar-nav>li>a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #FFF;
+    font-weight: bold;
+    padding-left: 40px;
+    cursor: pointer
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #fed136;
+}
+
+.navbar-toggle {
+    margin-top: 16px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+    color: #fed136;
+}
+
+
+/* End Nav */
+
+
+/* Start Header */
+
+.header {
+    height: 100vh;
+    background: url('../images/headerbg.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header .content {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.header .content h2 {
+    font-family: 'Droid Serif', serif;
+    color: #FFF;
+    font-style: italic;
+    margin-top: 200px;
+    font-size: 40px;
+}
+
+.header .content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 80px;
+}
+
+.header .content button {
+    background: #fed136;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 15px 40px;
+    border: none;
+    outline: inherit;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* End Header */
+
+
+/* Start Services */
+
+.services {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.services h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+
+.services h5 {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777777;
+}
+
+.services .service {
+    padding-top: 60px;
+}
+
+.services .service i {
+    border-radius: 50%;
+    border: 2px solid #fed136;
+    color: #fed136;
+    padding: 20px;
+}
+
+.services .service h4 {
+    color: #000;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+.services .service p {
+    font-family: 'Roboto Slab', serif;
+    color: #777777;
+}
+
+
+/* End Services */
+
+
+/* Start Portfolio */
+
+.portfolio {
+    background: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.portfolio p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777
+}
+
+.portfolio .project {
+    background: #FFF;
+    max-width: 291px;
+    margin: 30px auto;
+}
+
+.portfolio .project .info {
+    max-width: 291px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.portfolio .project .info h3 {
+    margin: 0 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.portfolio .project .info p {
+    margin-bottom: 0;
+}
+
+
+/* End Portfolio */
+
+
+/* Start About */
+
+.about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about .container>h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.about .container>p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777
+}
+
+.about .info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about .text h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.about .text p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777;
+    line-height: 2em;
+}
+
+.about .image {
+    position: relative;
+}
+
+.about .line {
+    position: absolute;
+    height: 1000px;
+    width: 2px;
+    background: #f1f1f1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -999999
+}
+
+.about .continue {
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #fed136;
+    padding: 20px;
+    border: 8px solid #f1f1f1;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* End About */
+
+
+/* Start Team */
+
+.team {
+    background: #f9f9f9;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.team h1,
+.team h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.team .container p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777
+}
+
+.team ul li {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+.team li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.team li a i {
+    margin-left: -2px;
+    margin-top: -3px;
+}
+
+.team .member {
+    margin-top: 50px;
+}
+
+.team p:last-child {
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+
+/* End Team */
+
+
+/* Start Partners */
+
+.partners {
+    padding: 50px 0;
+}
+
+.partners img {
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+    margin: auto;
+}
+
+.partners img:hover {
+    opacity: 1;
+}
+
+
+/* End Partners */
+
+
+/* Start Contact */
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url('../images/contact.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 50px;
+}
+
+.contact p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777;
+}
+
+.contact form {
+    margin-top: 50px;
+}
+
+.contact input {
+    font-weight: bold;
+}
+
+.contact textarea {
+    min-height: 168px;
+    resize: none;
+    font-weight: bold;
+}
+
+.contact input[type="submit"] {
+    margin-top: 30px;
+    color: #FFF;
+    font-weight: bold;
+    background: #fed136;
+    padding: 15px 30px;
+    outline: 0;
+}
+
+
+/* End Contact */
+
+
+/* Start Footer */
+
+.footer {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.footer ul {
+    margin-bottom: 0;
+}
+
+.footer .social li {
+    display: inline-block;
+    line-height: 61px;
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+
+.footer .social a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer .copyright {
+    padding-top: 15px;
+}
+
+
+/* End Footer */
